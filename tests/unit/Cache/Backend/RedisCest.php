@@ -366,7 +366,7 @@ class RedisCest
         $I->dontSeeInRedis('_PHCR' . 'test-output');
     }
 
-    public function setTimeout(UnitTester $I)
+    public function expire(UnitTester $I)
     {
         $I->wantTo('Get data by using Redis as cache backend and set timeout');
 
